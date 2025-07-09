@@ -16,6 +16,13 @@ const Gear = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <CardGear
+              image={"🎣"}
+              title={"Fishing Rods"}
+              description={
+                "From ultralight to heavy action rods for all fishing styles."
+              }
+            />
+            <CardGear
               image={"🌀"}
               title={"Reels"}
               description={

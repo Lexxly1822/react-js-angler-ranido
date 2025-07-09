@@ -1,4 +1,5 @@
 import React from "react";
+import CardTips from "../../../partial/CardTips";
 
 const Tips = () => {
   return (
@@ -14,65 +15,36 @@ const Tips = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Tip 1 */}
-            <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">
-                Time Your Fishing
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Fish are most active during dawn and dusk. Plan your trips
-                around these times for better results.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="mr-2">⏱️</span>
-                <span>Best times: 1 hour before/after sunrise/sunset</span>
-              </div>
-            </div>
-
-            {/* Tip 2 */}
-            <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">
-                Match the Hatch
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Use lures and flies that resemble the natural food sources in
-                the water you're fishing.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="mr-2">👀</span>
-                <span>Observe insects and baitfish in the area</span>
-              </div>
-            </div>
-
-            {/* Tip 3 */}
-            <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">
-                Proper Knot Tying
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Learn essential fishing knots like the improved clinch knot and
-                palomar knot to prevent losing fish.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="mr-2">🎀</span>
-                <span>Practice at home before your trip</span>
-              </div>
-            </div>
-
-            {/* Tip 4 */}
-            <div className="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500">
-              <h3 className="text-xl font-bold mb-3 text-gray-800">
-                Weather Awareness
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Fish behavior changes with weather patterns. Overcast days often
-                produce better results than bright sunny days.
-              </p>
-              <div className="flex items-center text-sm text-gray-500">
-                <span className="mr-2">⛅</span>
-                <span>Check forecasts and barometric pressure</span>
-              </div>
-            </div>
+            <CardTips
+              image={"⏱️"}
+              tips={"Best times: 1 hour before/after sunrise/sunset"}
+              title={"Time Your Fishing"}
+              description={
+                "Fish are most active during dawn and dusk. Plan your trips around these times for better results.."
+              }
+            />
+            <CardTips
+              image={"👀"}
+              tips={"Best times: 1 hour before/after sunrise/sunset"}
+              title={"Match the Hatch"}
+              description={"Observe insects and baitfish in the area"}
+            />
+            <CardTips
+              image={"🎀"}
+              tips={"Practice at home before your trip"}
+              title={"Proper Knot Tying"}
+              description={
+                "Fish are most active during dawn and dusk. Plan your trips around these times for better results.."
+              }
+            />
+            <CardTips
+              image={"⛅"}
+              tips={"Check forecasts and barometric pressure"}
+              title={"Weather Awareness"}
+              description={
+                "Fish are most active during dawn and dusk. Plan your trips around these times for better results.."
+              }
+            />
           </div>
         </div>
       </section>
